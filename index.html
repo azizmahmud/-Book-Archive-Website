@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Book-archive</title>
+</head>
+
+<body>
+    <section class="search-box">
+        <div class="row">
+            <div class="col-md-4 mx-auto mt-5">
+                <h1 class="text-center py-3">Search Books</h1>
+                <div class="input-group mb-3">
+                    <input id="search-text" type="text" class="form-control" placeholder="Search Book">
+                    <button onclick="loadBooksApi()" class="btn btn-outline-secondary" type="button"
+                        id="">Search</button>
+                </div>
+                <!--Show Error and serch Result  -->
+                <div id="error-result">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="books-showcase mt-5">
+
+        <div class="container">
+            <div id="books-container" class="row row-cols-1 row-cols-md-4 g-4">
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Bootstrap js  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- vanila js -->
+    <script src="js//book.js"></script>
+</body>
+
+</html>
